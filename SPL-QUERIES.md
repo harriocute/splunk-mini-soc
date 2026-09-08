@@ -1,4 +1,4 @@
-# SPL Queries Used in the Mini SOC
+# SPL Queries Used in the Splunk SOC
 
 This file records the searches used during the project. They are grouped by analyst purpose rather than presented as a list of commands to memorize.
 
