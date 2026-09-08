@@ -1,4 +1,4 @@
-# Splunk Mini SOC — Windows Detection & Investigation Lab
+# Splunk SOC — Windows Detection & Investigation Lab
 
 A hands-on home Security Operations Center (SOC) project built with **Splunk Enterprise, Splunk Universal Forwarder, Windows 11, and Sysmon**.
 
@@ -18,7 +18,7 @@ The project demonstrates an end-to-end SOC workflow: collect telemetry, search i
 
 ## Architecture
 
-![Splunk Mini SOC Architecture](architecture/splunk-mini-soc-architecture.svg)
+![Splunk SOC Architecture](architecture/splunk-soc-architecture.svg)
 
 ```text
 Windows 11 Target
@@ -178,12 +178,12 @@ See [`SPL-QUERIES.md`](SPL-QUERIES.md).
 ## Project Structure
 
 ```text
-splunk-mini-soc/
+splunk-soc/
 ├── README.md
 ├── DETECTIONS.md
 ├── SPL-QUERIES.md
 ├── architecture/
-│   └── splunk-mini-soc-architecture.svg
+│   └── splunk-soc-architecture.svg
 ├── investigations/
 │   ├── CASE-001-firefox-desktop-execution.md
 │   └── CASE-002-benign-process-hunting.md
