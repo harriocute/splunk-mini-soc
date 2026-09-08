@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#1e293b"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity="0.25"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="1200" height="650" fill="url(#bg)"/>
+  <text x="60" y="65" fill="#f8fafc" font-family="Arial,sans-serif" font-size="34" font-weight="700">Splunk Mini SOC Architecture</text>
+  <text x="60" y="98" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="17">Windows endpoint telemetry → Universal Forwarder → Splunk Enterprise</text>
+
+  <rect x="60" y="155" width="300" height="350" rx="18" fill="#f8fafc" filter="url(#shadow)"/>
+  <rect x="60" y="155" width="300" height="62" rx="18" fill="#2563eb"/>
+  <text x="210" y="195" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="23" font-weight="700">Windows 11 Endpoint</text>
+  <text x="90" y="255" fill="#0f172a" font-family="Arial,sans-serif" font-size="19" font-weight="700">Telemetry</text>
+  <text x="90" y="292" fill="#334155" font-family="Arial,sans-serif" font-size="17">• Security Event Log</text>
+  <text x="90" y="326" fill="#334155" font-family="Arial,sans-serif" font-size="17">• System Event Log</text>
+  <text x="90" y="360" fill="#334155" font-family="Arial,sans-serif" font-size="17">• Application Event Log</text>
+  <text x="90" y="394" fill="#334155" font-family="Arial,sans-serif" font-size="17">• Sysmon Event ID 1</text>
+  <text x="90" y="428" fill="#334155" font-family="Arial,sans-serif" font-size="17">• Sysmon Event ID 3</text>
+  <text x="90" y="462" fill="#334155" font-family="Arial,sans-serif" font-size="17">• Sysmon Event ID 11+</text>
+
+  <line x1="360" y1="330" x2="490" y2="330" stroke="#38bdf8" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="425" y="305" text-anchor="middle" fill="#7dd3fc" font-family="Arial,sans-serif" font-size="16" font-weight="700">TCP 9997</text>
+  <text x="425" y="355" text-anchor="middle" fill="#94a3b8" font-family="Arial,sans-serif" font-size="14">Forwarded logs</text>
+
+  <rect x="490" y="205" width="250" height="250" rx="18" fill="#f8fafc" filter="url(#shadow)"/>
+  <rect x="490" y="205" width="250" height="62" rx="18" fill="#111827"/>
+  <text x="615" y="245" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="23" font-weight="700">Splunk Enterprise</text>
+  <text x="615" y="300" text-anchor="middle" fill="#334155" font-family="Arial,sans-serif" font-size="18">SIEM / Search Platform</text>
+  <text x="525" y="342" fill="#334155" font-family="Arial,sans-serif" font-size="16">• SPL search &amp; analysis</text>
+  <text x="525" y="374" fill="#334155" font-family="Arial,sans-serif" font-size="16">• Detection rules</text>
+  <text x="525" y="406" fill="#334155" font-family="Arial,sans-serif" font-size="16">• Alerting</text>
+  <text x="525" y="438" fill="#334155" font-family="Arial,sans-serif" font-size="16">• Investigation</text>
+
+  <line x1="740" y1="330" x2="865" y2="330" stroke="#38bdf8" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <rect x="865" y="145" width="275" height="370" rx="18" fill="#f8fafc" filter="url(#shadow)"/>
+  <rect x="865" y="145" width="275" height="62" rx="18" fill="#0f766e"/>
+  <text x="1002" y="185" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="22" font-weight="700">SOC Analyst Workflow</text>
+  <text x="900" y="250" fill="#334155" font-family="Arial,sans-serif" font-size="17">1. Baseline telemetry</text>
+  <text x="900" y="290" fill="#334155" font-family="Arial,sans-serif" font-size="17">2. Hunt for anomalies</text>
+  <text x="900" y="330" fill="#334155" font-family="Arial,sans-serif" font-size="17">3. Validate context</text>
+  <text x="900" y="370" fill="#334155" font-family="Arial,sans-serif" font-size="17">4. Correlate events</text>
+  <text x="900" y="410" fill="#334155" font-family="Arial,sans-serif" font-size="17">5. Triage / disposition</text>
+  <text x="900" y="450" fill="#334155" font-family="Arial,sans-serif" font-size="17">6. Alert &amp; document</text>
+
+  <rect x="280" y="555" width="640" height="48" rx="24" fill="#1e40af"/>
+  <text x="600" y="586" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="17" font-weight="700">Home-lab project: Detect • Investigate • Document</text>
+</svg>
