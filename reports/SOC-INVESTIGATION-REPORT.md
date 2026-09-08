@@ -1,8 +1,8 @@
-# Mini SOC Investigation Report
+# Splunk SOC Investigation Report
 
 ## Executive Summary
 
-This project implemented a small Windows-focused SOC monitoring environment using Splunk Enterprise, Splunk Universal Forwarder, and Sysmon. The lab successfully collected Windows telemetry, created behavioral detections, validated alerting, and performed analyst-led threat hunting.
+This project implemented a Windows-focused SOC monitoring environment using Splunk Enterprise, Splunk Universal Forwarder, and Sysmon. The lab successfully collected Windows telemetry, created behavioral detections, validated alerting, and performed analyst-led threat hunting.
 
 The project intentionally included both positive detection validation and benign investigations. This allowed the analyst workflow to demonstrate not only detection, but also triage and false-positive reduction.
 
@@ -69,4 +69,4 @@ Email alert delivery and a full SOC dashboard were not completed during this pha
 
 ## Conclusion
 
-The Mini SOC demonstrates practical security monitoring rather than tool installation alone. The lab collected real endpoint telemetry, produced validated detections, and required analyst judgment to distinguish suspicious-looking behavior from legitimate software and security-agent activity.
+The Splunk SOC demonstrates practical security monitoring rather than tool installation alone. The lab collected real endpoint telemetry, produced validated detections, and required analyst judgment to distinguish suspicious-looking behavior from legitimate software and security-agent activity.
