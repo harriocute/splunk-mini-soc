@@ -134,6 +134,8 @@ Process and file telemetry established the following timeline:
 
 See [`investigations/CASE-001-firefox-desktop-execution.md`](investigations/CASE-001-firefox-desktop-execution.md).
 
+Additional benign process-hunting notes are documented in [`investigations/CASE-002-benign-process-hunting.md`](investigations/CASE-002-benign-process-hunting.md).
+
 ## Analyst Workflow Demonstrated
 
 ```text
@@ -183,7 +185,8 @@ splunk-mini-soc/
 ├── architecture/
 │   └── splunk-mini-soc-architecture.svg
 ├── investigations/
-│   └── CASE-001-firefox-desktop-execution.md
+│   ├── CASE-001-firefox-desktop-execution.md
+│   └── CASE-002-benign-process-hunting.md
 └── reports/
     └── SOC-INVESTIGATION-REPORT.md
 ```
